@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKEA Clone</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="clone.css">
+    <!-- Bootstrap for responsive navbar and other elements -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="https://www.ikea.com/global/assets/logos/brand/ikea.svg" alt="IKEA Logo" class="logo">
+            <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #0a0a0a;"></i><input type="text" placeholder="What are you looking for?" class="search-bar">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-camera fa-lg" style="color: #050505;"></i>
+        </div>
+        <!-- Navbar links -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse" id="navbarNav">
+            <ul class="navbar-right1 ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-truck fa-lg" style="color: #050505;"></i>&nbsp;Enter postal code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-store fa-lg" style="color: #0a0a0a;"></i>&nbsp;Select store</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-regular fa-user fa-lg" style="color: #0a0a0a;"></i>&nbsp;Hej! Log in</a>
+                </li>
+                <li class="nav-item love">
+                    <a class="nav-link" href="#"><i class="fa-regular fa-heart fa-lg" style="color: #111212;"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+        </div>
+        <ul class="navbar-right">
+            <li><a class="active" href="#">Shop products</a></li>
+            <li><a href="#">Shop by rooms</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">New at IKEA</a></li>
+            <li><a href="#">Customer service</a></li>
+            <li><a href="#">Tips, Ideas & Trends</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <!-- Scrolling section for images : single row images -->
+    <section class="scrolling-images">
+        <div class="scroll-container">
+            <div class="scroll-item">
+                <img src="https://www.ikea.com/images/4a/a5/4aa51396dc8e2432a01196c9df8a195e.jpg?imwidth=160" alt="New products">
+                <p>Sale</p>
+            </div>
+            <div class="scroll-item">
+                <img src="https://www.ikea.com/global/assets/range-categorisation/images/product/storage-organisation-st001.jpeg?imwidth=160" alt="Storage & Organisation">
+                <p>Storage & Organisation</p>
+            </div>
+            <div class="scroll-item">
+                <img src="https://www.ikea.com/global/assets/range-categorisation/images/product/furniture-fu001.jpeg?imwidth=160" alt="Furniture">
+                <p>Furniture</p>
+            </div>
+            <div class="scroll-item">
+                <img src="https://www.ikea.com/in/en/range-categorisation/images/product/textiles-tl001.jpeg?imwidth=160" alt="Home textiles">
+                <p>Home Textiles</p>
+            </div>
+            <div class="scroll-item">
+                <img src="https://www.ikea.com/global/assets/range-categorisation/images/product/decoration-de001.jpeg?imwidth=160" alt="Decoration">
+                <p>Decoration</p>
+            </div>
+            <div class="scroll-item">
+                <img src="https://www.ikea.com/global/assets/range-categorisation/images/product/lighting-li001.jpeg?imwidth=160" alt="Lighting">
+                <p>Lighting</p>
+            </div>
+            <div class="scroll-item">
+                <img src="https://www.ikea.com/in/en/range-categorisation/images/product/kitchenware-tableware-kt001.jpeg?imwidth=160" alt="Kitchenware">
+                <p>Kitchenware</p>
+            </div>
+            <div class="scroll-item">
+                <img src="https://www.ikea.com/in/en/range-categorisation/images/product/bathroom-products-ba001.jpeg?imwidth=160" alt="Bathroom products">
+                <p>Bathroom Products</p>
+            </div>
+            <div class="scroll-item">
+                <img src="https://www.ikea.com/in/en/range-categorisation/images/product/pots-plants-pp001.jpeg?imwidth=160" alt="Bathroom products">
+                <p>Pots & Plants</p>
+            </div>
+            <div class="scroll-item">
+                <img src="https://www.ikea.com/global/assets/range-categorisation/images/product/outdoor-products-od001.jpeg?imwidth=160" alt="Bathroom products">
+                <p>Outdoor Products</p>
+            </div>
+            <div class="scroll-item">
+                <img src="https://www.ikea.com/global/assets/range-categorisation/images/product/home-improvement-hi001.jpeg?imwidth=160" alt="Bathroom products">
+                <p>Home Improvements</p>
+            </div>
+            <div class="scroll-item">
+                <img src="https://www.ikea.com/in/en/range-categorisation/images/product/rugs-mats-flooring-rm001.jpeg?imwidth=160" alt="Bathroom products">
+                <p>Carpets and Mats</p>
+            </div>
+            <div class="scroll-item">
+                <img src="https://www.ikea.com/in/en/range-categorisation/images/product/pet-products-pt001.jpeg?imwidth=160" alt="Bathroom products">
+                <p>Pet Products</p>
+            </div>
+            <div class="scroll-item">
+                <img src="https://www.ikea.com/global/assets/range-categorisation/images/product/food-beverages-fb001.jpeg?imwidth=160" alt="Bathroom products">
+                <p>Food & Beverages</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid Section (Responsive) -->
+    <section>
+        <div class="grid-container">
+            <div class="grid-item"><img class="img2" src="https://www.ikea.com/images/7a/3e/7a3eaaf65f21cae1caf0cccd792d4731.jpg?f=xs" alt="New"></div>
+            <div class="grid-item"><img class="img3" src="https://www.ikea.com/images/d2/80/d2809465799e2c3c8da75cd30b261cdf.jpg?f=xs" alt="studytable"></div>
+            <div class="grid-item"><img class="img4" src="https://www.ikea.com/images/38/43/38434ce4cca6a1e0d441e613c46c745f.jpg?f=xs" alt="plantpots"></div>
+            <div class="grid-item"><img class="img5" src="https://www.ikea.com/images/2a/9c/2a9c1486f23a6e9f5ffd82baeb3f704b.jpg?f=xs" alt="bedroom"></div>
+            <div class="grid-item"><img class="img6" src="https://www.ikea.com/images/ae/c7/aec76180069394a94edd2d281578691b.jpg?f=xs" alt="storage"></div>
+            <div class="grid-item"><img class="img7" src="https://www.ikea.com/images/ba/b7/bab772d20f625a053563b1154120ed80.jpg?f=xs" alt="kitchenware"></div>
+            <div class="grid-item"><img class="img8" src="https://www.ikea.com/images/5a/a9/5aa9161d52a8d5e7dccbc3aef9da39a8.jpg?f=xs" alt="furniture"></div>
+            <div class="grid-item"><img class="img9" src="https://www.ikea.com/images/2a/f8/2af838010054c53e8c64061d688dc84d.jpg?f=xs" alt="textiles"></div>
+        </div>
+    </section>
+
+    <!-- For your needs -->
+     <section id="needs">
+        <h3 class="mt-5 mb-5 ms-5 fw-bold">For all your needs there is IKEA</h3>
+        <div class="scrolling-images">
+            <div class="scroll-container">
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/ext/ingkadam/m/aaa43906d29473/original/PH191899.jpg?f=xxs" alt="New products">
+                    <div class="textbox"> Bedsheets from <br> Rs.399</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/images/5f/45/5f452ef79984c8c713113f22c7056593.png?f=xxs" alt="Storage & Organisation">
+                    <div class="textbox"> Wall shelves from <br> Rs.299</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/ext/ingkadam/m/d28fbec76f6e0cc/original/PH190864.jpg?f=xxs" alt="Furniture">
+                    <div class="textbox"> Pillows from <br> Rs.199</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/images/66/05/6605232a7194506b74b3ebd570ac2eec.png?f=xxs" alt="Home textiles">
+                    <div class="textbox"> Toys & play from <br> Rs.49</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/ext/ingkadam/m/79de50da64abd3dc/original/PH199220.jpg?f=xxs" alt="Decoration">
+                    <div class="textbox"> Rugs from <br> Rs.129</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/ext/ingkadam/m/1582e92e5a8f2fec/original/PH167289-crop001.jpg?f=xxs" alt="Lighting">
+                    <div class="textbox"> Cushion covers from <br> Rs.129</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/ext/ingkadam/m/478c97a41550c408/original/PH171283-crop002.jpg?f=xxs" alt="Kitchenware">
+                    <div class="textbox"> Mirrors from <br> Rs.149</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/ext/ingkadam/m/4f8edd66b3891689/original/PE864571-crop001.JPG?f=xxs" alt="Bathroom products">
+                    <div class="textbox"> Candles from <br> Rs.79</div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- big section -->
+    <section>
+    <div class="container mt-5">
+        <div class="row flex-nowrap overflow-auto" id="scroll-container">
+            <!-- Card 1 -->
+            <div class="col-4">
+                <div class="card">
+                    <img src="https://www.ikea.com/images/49/31/4931855ea54b5476e5573701b07520a5.png?f=xs" class="card-img-top" alt="Pets image">
+                    <div class="card-body" style="background-color: #790720f6;">
+                        <p class="card-text text-light fs-4 fw-bold">Get set for Diwali with <br>festive decor under <br> Rs.999</p>
+                        <p class="text-light fs-6">Add a festive glow to your home with laterns, bouquets, tealight holders, and more, bringing warmth and joy to your celebrations</p>
+                        <a href="#" class="btn btn-light rounded-circle">
+                            <span>&#8594;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-4">
+                <div class="card">
+                    <img src="https://www.ikea.com/ext/ingkadam/m/75bdbd271db24753/original/PE797843.jpg?f=xs" class="card-img-top" alt="80s image">
+                    <div class="card-body" style="background-color: #014601e5;">
+                        <p class="card-text text-light fs-4 fw-bold">Last chance to buy</p>
+                        <p class="text-light fs-6">Be quick before your favourite items go out of stock</p><br><br><br><br>
+                        <a href="#" class="btn btn-light rounded-circle">
+                            <span>&#8594;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-4">
+                <div class="card">
+                    <img src="https://www.ikea.com/images/98/d6/98d613b20f6cddfcb8481a03941b3106.jpg?f=xs" class="card-img-top" alt="Glow image">
+                    <div class="card-body" style="background-color: #faad07;">
+                        <p class="card-text text-dark fs-4 fw-bold">Furniture under Rs.2999</p>
+                        <p class="text-dark fs-6">Transform your living space with our affordable and stylish furniture choices</p><br><br><br><br>
+                        <a href="#" class="btn btn-dark rounded-circle">
+                            <span>&#8594;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+     <!-- party -->
+      <section class="slumberparty">
+        <div class="sparty mt-5 mb-5">
+            <img src="https://www.ikea.com/images/c7/04/c7045beabd500d9a651c21af2e798f52.jpg?f=xxxl" alt="Responsive Image" class="img-fluid">
+        </div>
+      </section>
+
+    <!-- video -->
+    <section>
+    <div class="video">
+        <iframe class="res-video" width="750" height="430" src="https://www.youtube.com/embed/UudV1VdFtuQ?si=IeVTSnmzZIgskzgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="col-md-10 text-box">
+            <h3 class="ms-5 mt-5 fw-bold text-light fs-4">Design your space with <br> AI-powered IKEA Kreativ</h3>
+            <p class="ms-5 text-light fs-6">Scan, erase, design and easily bring your home to life with our new, AI-driven digital design experience. Bring IKEA products into your home in 3D or start in one of our virtual rooms.</p>
+            <button class="learn">Learn more</button>
+        </div>
+    </div>
+    </section>
+
+    <!-- more from ikea india -->
+    <section id="needs">
+        <h3 class="mt-5 mb-5 ms-5 fw-bold">More from IKEA India</h3>
+        <div class="scrolling-images">
+            <div class="scroll-container">
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/ext/ingkadam/m/58867e8260a1d4f4/original/PH173273-crop001.jpg?f=xxs">
+                    <div class="textbox"> IKEA for business</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/images/b3/1f/b31fbd037c371788db12a29cb3ddcebb.jpg?f=xxs" alt="Storage & Organisation">
+                    <div class="textbox"> IKEA App</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/images/41/34/41343797168f3cf303b65de45e2f706f.jpg?f=xxs">
+                    <div class="textbox"> IKEA Gift card</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/images/ed/41/ed41e6e4b1d0bbe5acdc3b0b289b90a9.jpg?f=xxs" alt="Home textiles">
+                    <div class="textbox"> join IKEA Family</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/images/8d/47/8d47c593545d124fdd0f2b7a6be0bd3a.jpg?f=xxs">
+                    <div class="textbox"> Product recall</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/images/90/9a/909a993c652b995335634681bbda2b9e.jpg?f=xxs">
+                    <div class="textbox"> Sustainability</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/images/cc/68/cc689c9226281202ce9d2b5a509f1e9d.jpg?f=xxs">
+                    <div class="textbox"> Shop by phone</div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- discover our services -->
+    <section id="needs">
+        <h3 class="mt-5 mb-5 ms-5 fw-bold">Discover our services</h3>
+        <div class="scrolling-images">
+            <div class="scroll-container">
+                <div class="scroll-item2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD_1N9x3rzdbs-JQgc-3EAd0w8zgfgr44WLw&usqp=CAU" alt="">
+                    <div class="textbox"> All services</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/images/42/1b/421b8236769a79f928c7d613b8aedbac.png?f=xxs" alt="Storage & Organisation">
+                    <div class="textbox"> Home delivery <br> starts @ Rs.49*</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/images/e0/4f/e04f6b9804cf60e1bc261d14712a891e.png?f=xxs">
+                    <div class="textbox"> Click & collect <br> starts @ Rs.79</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/images/2f/91/2f911496af63d4dd1a81109c1467f1d9.jpg?f=xxs">
+                    <div class="textbox"> Personal shopper <br> starts @ Rs.1000</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/images/fc/38/fc388f8dc48f9f7c97c09f7765be2678.png?f=xxs">
+                    <div class="textbox"> Interior Design <br> starts @ Rs.3000</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/images/75/28/7528d2b979807244feab25bfcdd42c46.jpg?f=xxs">
+                    <div class="textbox"> Measuring services <br> starts @ Rs.1000</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/images/c3/bd/c3bd865123ddbd69fb80677f0d852e21.jpg?f=xxs">
+                    <div class="textbox"> Kitchen planning <br> starts @ Rs.1000</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/images/ce/fb/cefb4cf92019246cee44df17bfe8dce0.png?f=xxs">
+                    <div class="textbox"> Installation</div>
+                </div>
+                <div class="scroll-item2">
+                    <img src="https://www.ikea.com/images/77/2b/772b6b25c9b65b2d9d1dc9946475e342.jpg?f=xxs">
+                    <div class="textbox"> Design your room</div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="text-center text-lg-start text-muted mt-4">
+
+        <section class="footer-links mt-4">
+            <div class="container text-center text-md-start">
+                <div class="row">
+                    <div class="col-md-3 col-lg-5 col-xl-3 mx-auto mb-4">
+                        <h6 class=" fw-bold mb-4 text-dark">Join IKEA family</h6>
+                        <p class="text-dark">Enjoy member-only discounts & offers, early access to IKEA sale, delicious food offers and much more. Join for free.​</p>
+                        <a class="foot" href=""><p class="text-dark">See more</p></a>
+                        <button class="footb">Join the club</button><br><br>
+                        <h6 class=" fw-bold mb-4 text-dark">IKEA Business Network</h6>
+                        <p class="text-dark">Join the membership program for business customers with exciting benefits and features. Join us for free and enjoy member discounts, quick-fix tips, online tutorials and a lot more.​</p>
+                        <a class="foot" href=""><p class="text-dark">See more</p></a>
+                        <button class="footb">Join Now</button>
+                        <div class="mt-4">
+                            <a href="#" class="me-4 text-reset">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="me-4 text-reset">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="me-4 text-reset">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="me-4 text-reset">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-lg-5 col-xl-2 mx-auto mb-4">
+                        <h6 class="fw-bold mb-4 text-dark">IKEA family</h6>
+                        <a class="foot" href=""><p class="text-dark">Log in</p></a>
+                        <a class="foot" href=""><p class="text-dark"></p>Join IKEA family</p></a>
+                        <a class="foot" href=""><p class="text-dark"></p>Member offers</p></a>
+                        <a class="foot" href=""><p class="text-dark"></p>Workshops & events</p></a>
+                    </div>
+
+                    <div class="col-md-2 col-lg-5 col-xl-2 mx-auto mb-4">
+                        <h6 class=" fw-bold mb-4 text-dark fs-7">Services</h6>
+                        <a class="foot" href=""><p class="text-dark"></p>Delivery service</p></a>
+                        <a class="foot" href=""><p class="text-dark"></p>Design your room</p></a>
+                        <a class="foot" href=""><p class="text-dark"></p>Installation</p></a>
+                        <a class="foot" href=""><p class="text-dark"></p>click & collect</p></a>
+                        <a class="foot" href=""><p class="text-dark"></p>personal shopper</p></a>
+                        <a class="foot" href=""><p class="text-dark"></p>Assembly service</p></a>
+                        <a class="foot" href=""><p class="text-dark"></p>Measuring service</p></a>
+                        <a class="foot" href=""><p class="text-dark"></p>kitchen planning</p></a>
+                        <a class="foot" href=""><p class="text-dark"></p>Customer service</p></a>
+                        <a class="foot" href=""><p class="text-dark"></p>track your order</p></a>
+                        <a class="foot" href=""><p class="text-dark"></p>recycle program</p></a>
+                    </div>
+
+                    <div class="col-md-2 col-lg-5 col-xl-2 mx-auto mb-4">
+                        <h6 class=" fw-bold mb-4 text-dark">Help</h6>
+                        <a class="foot" href=""><p>How to shop</p></a>
+                        <a class="foot" href=""><p>Return policy</p></a>
+                        <a class="foot" href=""><p>prices & price tags</p></a>
+                        <a class="foot" href=""><p>contact us</p></a>
+                        <a class="foot" href=""><p>FAQ's</p></a>
+                        <a class="foot" href=""><p>Planners</p></a>
+                        <a class="foot" href=""><p>Gift card</p></a>
+                        <a class="foot" href=""><p>Feedback</p></a>
+                        <a class="foot" href=""><p>Terms & conditions</p></a>
+                    </div>
+
+                    <div class="col-md-3 col-lg-5 col-xl-2 mx-auto mb-4">
+                        <h6 class=" fw-bold mb-4 text-dark">About IKEA</h6>
+                        <a class="foot" href=""><p>This is IKEA</p></a>
+                        <a class="foot" href=""><p>Careers at IKEA</p></a>
+                        <a class="foot" href=""><p>Newsroom</p></a>
+                        <a class="foot" href=""><p>Sustainability</p></a>
+                        <a class="foot" href=""><p>IKEA Stores</p></a>
+                        <a class="foot" href=""><p>IKEA Restaurant</p></a>
+                        <a class="foot" href=""><p>IKEA for business</p></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-content d-flex justify-content-center justify-content-lg-between p-4 border-bottom"></section>
+            <div class="me-5 d-none d-md-block mt-4 ms-5 text-center">
+                <span>&copy; Inter IKEA systems.2024@Gourinandhana</span>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Bootstrap JS for responsive features -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
